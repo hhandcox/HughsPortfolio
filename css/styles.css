@@ -61,3 +61,37 @@ header {
 #loginModal {
     color: black;
 }
+
+
+/*Simple Color Changing Animation */
+@keyframes example {
+    0%   {color: #ef476f; left:0px; top:0px;}
+    25%  {color: #ffd166; left:200px; top:0px;}
+    50%  {color: #06d6a0; left:200px; top:200px;}
+    75%  {color: #118ab2; left:0px; top:200px;}
+    90% {color: #073b4c; left:0px; top:0px;}
+    100% {color: #ffffff; left:0px; top:0px;}
+
+  }
+  .nameName {
+    animation-name: example;
+    animation-duration: 40s;
+  }
+
+  #socialBtn {
+      border-radius: 30px;
+      outline: none;
+      border: none;
+  }
+
+  hr {
+      border: none;
+      border-bottom: 1px !important;
+      border-color: white !important;
+      margin-top: 50px;
+  }
+
+  .lightMode {
+      background-color: white;
+      color: black;
+  }

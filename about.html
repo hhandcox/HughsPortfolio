@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3fe41f9876.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Header Start-->
@@ -53,7 +54,6 @@
                             <label for="Form-email">Your Email</label>
                         </div>
                         <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
                             <input type="password" id="Form-pass" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-pass">Your Password</label>
                           </div>
@@ -65,18 +65,76 @@
             </div>
         </div>
         <!--Main Content Start-->
-        <div class="row mx-auto">
-            <div class="col-12" id="name">
+        <div class="row mx-auto mt-5 mb-5">
+            <div class="col-12" id="aboutMe">
                 <h1 class="nameTitle d-flex justify-content-center">a little about me...</h1>
-                <p class="aboutMe">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Perferendis esse, aliquid asperiores sed possimus eius nisi <br> similique quis ducimus itaque error doloremque natus <br> laborum blanditiis ea ratione dignissimos alias minus.</p>
+                <p class="aboutMe">Residing in Austin, TX I have over 10 years experience producing media for television and higher education. <br> I've been a lifelong tinkerer and </p>
             </div>
-            <div class="col-12 d-flex justify-content-center" id="seeWork">
-                <button class="btn btn-primary text-nowrap">See The Work</button> 
+            <div class="col-12 d-flex justify-content-center" id="seeTech">
+                <button class="btn btn-primary text-nowrap" id="techBtn">My Tech Arsenal</button> 
             </div>
-        </div> 
-        <div class="row mx-auto">
-        </div>
-
+        </div>        
+        <section class="pt-4">
+            <div class="container px-lg-5 hideTech" id="tech">
+                <!-- Page Features-->
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4 mb-5">
+                        <div class="card infoCard bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white mb-4 mt-n4"><i class="fa-brands fa-bootstrap round-icon"></i></div>
+                                <h2 class="fw-bold">Bootstrap & Sass</h2>
+                                <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-5">
+                        <div class="card infoCard bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white mb-4 mt-n4"><i class="fa-solid fa-code round-icon"></i></div>
+                                <h2 class="fs-4 fw-bold">HTML5, CSS3, Javascript</h2>
+                                <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-5">
+                        <div class="card infoCard bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white mb-4 mt-n4"><i class="fa-brands fa-react round-icon"></i></div>
+                                <h2 class="fs-4 fw-bold">React & React Native</h2>
+                                <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-5">
+                        <div class="card infoCard bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature text-white mb-4 mt-n4"><i class="fa-brands fa-node-js round-icon"></i></div>
+                                <h2 class="fs-4 fw-bold">NodeJS</h2>
+                                <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-5">
+                        <div class="card infoCard bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fa-brands fa-mdb round-icon"></i></div>
+                                <h2 class="fs-4 fw-bold">MongoDB</h2>
+                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-5">
+                        <div class="card infoCard bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fa-brands fa-python round-icon"></i></div>
+                                <h2 class="fs-4 fw-bold">Python</h2>
+                                <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>       
         <!--Footer Start-->
         <div class="footer row mx-auto mt-auto pb-3">
             <div class="col">

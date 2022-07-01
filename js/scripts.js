@@ -1,5 +1,3 @@
-let mybutton = document.getElementById("btn-back-to-top");
-
 $(function () {
     /*Tooltip*/
     $('[data-toggle="tooltip"]').tooltip()
@@ -19,7 +17,8 @@ $(function () {
         $('#clientLogin2').toggleClass('clientHide');
     });
 
-/*Back to Top Button */
+/*Back to Top Button
+let mybutton = document.getElementById("btn-back-to-top");
 window.onscroll = function () {
   scrollFunction();
 };
@@ -33,10 +32,10 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
+    mybutton.addEventListener("click", backToTop);
 }
-mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+}*/

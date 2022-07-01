@@ -51,15 +51,14 @@ header {
 }
 
 .loginButton:hover {
-    text-decoration: underline;
-
+    color: #4285F4;
 }
 
 #loginModal {
     color: black;
 }
 
-@keyframes example {
+@keyframes nameAnimation {
     0%   {color: #ef476f; left:0px; top:0px;}
     25%  {color: #ffd166; left:200px; top:0px;}
     50%  {color: #06d6a0; left:200px; top:200px;}
@@ -69,7 +68,7 @@ header {
 
   }
   .nameName {
-    animation-name: example;
+    animation-name: nameAnimation;
     animation-duration: 35s;
   }
 
@@ -159,4 +158,123 @@ header {
       display: none;
       color: white;
       text-decoration: none;
+  }
+
+  #aboutMeP {
+      display: flex;
+      max-width: 900px;
+      margin: 1em auto;
+
+  }
+
+  /*About Me Profile Card*/
+  .profile-card {
+    color: white;    
+}
+.profile-card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+#profileCard {
+    max-width: 500px;
+    padding-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+/*End Profile Card*/
+
+hr {
+    border: 0;
+    clear:both;
+    display: flex;
+    width: 50%;               
+    background:linear-gradient(to left, #00b7ff, rgb(255, 0, 230));
+    height: 1px;
+    padding: 0;
+    margin-top: 8px;
+  }
+  #line {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#maxWidth {
+    max-width: 1100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Contact Form*/
+.contact{
+    padding: 4%;
+    height: 400px;
+}
+.col-md-3{
+    background: #d600c5;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+   
+    
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+.contactMe {
+    text-shadow: #25274d;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/*Contact Me Viewport Border Radius Styling*/
+@media(max-width:767px){
+    .contactBorder{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 574px) {
+    nav.navbar {
+      background: rgb(30, 30, 30);
+    }
   }

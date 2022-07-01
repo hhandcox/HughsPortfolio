@@ -18,9 +18,9 @@
     <div class="container-fluid d-flex flex-column">
         <div class="header mb-auto pt-3">
             <!--Navbar Start-->
-            <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <nav class="navbar navbar-expand-sm navbar-dark" id="projectsNav">
                 <div class="container">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolioNavbar">
+                     <button class="navbar-toggler" id="clientBtn2" type="button" data-toggle="collapse" data-target="#portfolioNavbar">
                          <span class="navbar-toggler-icon"></span>
                      </button>
          
@@ -29,11 +29,11 @@
                              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                              <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
                              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                          </ul>
                      </div>
                      <span class="col col-md-2 ml-3 text-nowrap">
-                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <a role="button" data-toggle="modal" data-target="#loginModal" id="clientLogin2">
                             Client Login
                         </a>
                     </span>
@@ -65,10 +65,21 @@
             </div>
         </div>
         <!--Main Content Start-->
-        <div class="row mx-auto mt-5 mb-5">
+        <!--Tryout-->
+    <div class="container pb-4" id="profileCard">
+        <div class="profile-card text-center">
+            <div class="profile-photo shadow">
+                <img src="/img/hugh.jpeg" alt="profile Photo" class="img-fluid">
+            </div>
+            <h3 class="pt-3 text-white">Hugh Handcox</h3>            
+        </div>
+        <div id="line"><hr /></div>
+    </div>
+        <!--/Tryout-->
+        <div class="row mx-auto mt-0 mb-5">
             <div class="col-12" id="aboutMe">
                 <h1 class="nameTitle d-flex justify-content-center">a little about me...</h1>
-                <p class="aboutMe">Residing in Austin, TX I have over 10 years experience producing media for television and higher education. <br> I've been a lifelong tinkerer and </p>
+                <p class="aboutMe" id="aboutMeP">Residing in Austin, TX with over 10 years experience producing media for television and higher education. This experience has molded me into a creative problem solver with acute attention to detail - and it's these skills I am bringing with me as I become a Full Stack Developer! Click below to see what knowledge I can bring to the table.</p>
             </div>
             <div class="col-12 d-flex justify-content-center" id="seeTech">
                 <button class="btn btn-primary text-nowrap" id="techBtn">My Tech Arsenal</button> 
@@ -138,7 +149,6 @@
         <!--Footer Start-->
         <div class="footer row mx-auto mt-auto pb-3">
             <div class="col">
-                <p class="footer">A work in progress!</p>
             </div>
         </div>
 

@@ -12,6 +12,12 @@ $(function () {
     $('#clientBtn').on('click', function(){
         $('#clientLogin').toggleClass('clientHide');
     });
+    $('#clientBtn1').on('click', function(){
+        $('#clientLogin1').toggleClass('clientHide');
+    });
+    $('#clientBtn2').on('click', function(){
+        $('#clientLogin2').toggleClass('clientHide');
+    });
 
 /*Back to Top Button */
 window.onscroll = function () {
